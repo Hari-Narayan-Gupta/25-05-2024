@@ -1,0 +1,44 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 85vh;
+  }
+  
+  .thank-you {
+    text-align: center;
+  }
+  
+  .thank-you h1 {
+    color: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+  }
+  
+  .thank-you p {
+    color: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    text-align: center;
+    float: left;
+  }
+  
+  .button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(243, 126, 17);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-container button:hover {
+    background-color: #00b34b;
+  }
+  

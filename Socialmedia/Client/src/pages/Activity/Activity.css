@@ -1,0 +1,15 @@
+.activity-container{
+    position: relative;
+    /* display: grid; */
+    /* grid-template-columns: 60rem auto; */
+    /* gap: 1rem; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .activity-container{
+        flex-wrap: wrap;
+    }
+}

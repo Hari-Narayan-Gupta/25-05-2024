@@ -1,0 +1,78 @@
+.block-user-modal {
+    position: absolute;
+    right: calc(100% + 20px); /* Adjust the distance from the SettingModal */
+    top: 0;
+    transform: translateY(0%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4%;
+    width: 328px; 
+    height: 85vh;
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .cancel-button {
+    margin-right: 10px;
+  }
+  
+  .block-button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+  .BlockClose-btn{
+    z-index: 99999;
+  }
+
+
+  @media(max-width: 600px){
+    .block-user-modal {
+        position: absolute;
+        right: calc(-7% + 20px);
+        top: 0;
+        transform: translateY(0%);
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 4%;
+        width: 259px;
+        height: 85vh;
+        padding: 20px;
+        z-index: 1000;
+    } 
+  }
+
+  .block-user{
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .blocked-user{
+    overflow-y: auto;
+    max-height: 90vh;
+  }

@@ -1,0 +1,13 @@
+.Posts
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .Posts{
+        overflow-y: auto;
+        max-height: 90vh;
+    }
+}

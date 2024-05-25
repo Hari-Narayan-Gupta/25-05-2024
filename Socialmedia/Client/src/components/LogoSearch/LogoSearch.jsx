@@ -1,0 +1,40 @@
+import React, { useState } from "react";
+import Logo from "../../img/logo.png";
+import './LogoSearch.css'
+import { UilSearch } from '@iconscout/react-unicons'
+import { Link } from "react-router-dom";
+const LogoSearch = ({ onSearchResult }) => {
+
+  const [searchValue, setSearchValue] = useState('');
+
+  const handleInputChange = (event) => {
+    setSearchValue(event.target.value);
+  };
+
+  const search = () => {
+    const searchQuery = searchValue;
+    onSearchResult(searchQuery);
+    setSearchValue('');
+  };
+
+  return (
+    <div className="LogoSearch">
+      <Link to={`/`} style={{ textDecoration: "none", color: "inherit" }}>
+        <img src={Logo} alt="" />
+      </Link>
+      <div className="Search">
+        <input
+          type="text"
+          placeholder="#Explore"
+          value={searchValue}
+          onChange={handleInputChange}
+        />
+        <div className="s-icon" onClick={search}>
+          <UilSearch />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default LogoSearch;

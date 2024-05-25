@@ -1,0 +1,132 @@
+/* SearchModal.css */
+.search-modal-overlay {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    width: 370px; /* Adjust width as needed */
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    border-radius: 4%;
+  }
+  
+  .search-modal {
+    background: white;
+    width: 330px;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 4%;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  } 
+  
+.search-container{
+    max-height: 90vh;
+    overflow-y: auto;
+    margin-top: 30px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #5f5c5c;
+  }
+
+  .search-input-icon {
+    position: absolute;
+    top: 12.3%;
+    right: 35px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+  }
+
+  .user-name{
+    margin: -10px 0px 0px 4px;
+  }
+
+  .user-card{
+    display: flex;
+    align-items: center;
+    margin: 22px 0px 0px 5px;
+  }
+
+  .name-contain{
+    margin-left: 8px;
+  }
+
+  @media(max-width: 600px){
+    .search-modal-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 340px; /* Adjust width as needed */
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        border-radius: 4%;
+    }
+   .search-modal {
+        width: 300px;
+    }
+      .search-input-icon {
+        position: absolute;
+        top: 8%;
+        right: 30px;
+        transform: translateY(-50%);
+        width: 20px; 
+        height: 20px;
+        pointer-events: none;
+    }
+    .user-card {
+      display: flex;
+      align-items: center;
+      margin: 20px 0px 0px 20px;
+  }
+  }
+
+  .post-list{
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .filter-btn{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* margin-top: 5px; */
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+  }
+
+  .search-filter-btn{
+    background-color: white;
+    border: 1px solid gainsboro;
+    padding: 6px 15px;
+    border-radius: 10px;
+    margin: 6px;
+    color: rgb(102, 100, 100);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+  }
+
+  .search-filter-btn:hover{
+    background-color: #ededed;
+    /* border: 1px solid rgb(107, 105, 105); */
+  }

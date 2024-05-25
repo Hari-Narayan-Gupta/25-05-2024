@@ -1,0 +1,24 @@
+.notification {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    margin-bottom: 1px;
+  }
+  .noti-contant{
+    display: flex;
+  }
+  .noti-msg{
+    margin: 0;
+  }
+  .notification{
+    cursor: pointer;
+  }
+  .notification:hover{
+    background-color: bisque;
+  }
+  .timeStamp{
+    font-size: 12px;
+  }
